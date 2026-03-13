@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin(origins = "http://localhost:5173") // 允许 Vue 开发服务器访问
+@CrossOrigin(origins = "*") // 允许 Vue 开发服务器访问
 public class TodoController {
 
     @Autowired
